@@ -5,7 +5,12 @@
 
 
     let i = 0
-    setInterval(()=>{console.log(i)
-        i+=1
+    let intervalID = setInterval(()=>{console.log(i);
+        i+=1;
+        if(i>3){
+            clearInterval(intervalID);
+        }
     },1000)
+
+    
 
